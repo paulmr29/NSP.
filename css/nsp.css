@@ -5,10 +5,9 @@
 
 h1 {
   color: black;
-  background-color: white;
   text-align: center;
-  font-style: italic;
-  font-weight: bold;
+  font-style: unset;
+  font-weight: 300;
   font-size: 250%;
   text-decoration: none; }
 
@@ -24,51 +23,11 @@ body {
   color: black; }
 
 p {
-  color: #e2e2e2;
+  color: black;
   text-align: center;
   font-style: oblique;
   font-size: 125%;
   font-weight: bold; }
-
-#menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  #menu ul a {
-    display: block;
-    color: black;
-    background-color: white;
-    text-decoration: none;
-    font-weight: 200;
-    font-size: 14px;
-    padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px; }
-
-#menu ul li {
-  background-color: white;
-  position: relative;
-  float: left;
-  margin: 0;
-  padding: 0; }
-  #menu ul li :hover {
-    background: white; }
-
-#menu ul ul {
-  display: none;
-  position: absolute;
-  background: white;
-  padding: 0; }
-  #menu ul ul li {
-    float: none;
-    width: 150px; }
-
-#menu ul ul a {
-  padding: 10px; }
-
-#menu ul li:hover > ul {
-  display: block; }
 
 header {
   font-family: Helvetica;
@@ -112,15 +71,21 @@ h4 {
   text-align: center;
   background-image: url(https://static.dezeen.com/uploads/2014/06/Sneakerboy-by-March-Studio_dezeen_ss_28.jpg);
   background: size 100%;
-  color: #c4c4c4;
+  color: #d1d1d1;
   font-size: 50px;
   font-weight: 800;
   font-family: 'Montserrat', sans-serif; }
 
 h5 {
-  text-align: left;
-  font-size: 20px;
-  color: black; }
+  text-align: center;
+  width: 100%;
+  margin: 0px auto;
+  color: black;
+  font-size: 100%;
+  letter-spacing: 5px;
+  top: 50%;
+  margin-top: -40px;
+  text-shadow: -1px -1px 0px crimson, 3px 3px 0px #ff1b48, 6px 6px 0px #fd597a; }
 
 h6 {
   color: #464646;
@@ -180,7 +145,7 @@ label {
   font-family: 'Lato'; }
 
 input {
-  border: 2px solid #e62727;
+  border: 2px solid black;
   font-size: 1.5rem;
   font-weight: 100;
   font-family: 'Lato';
@@ -189,8 +154,8 @@ input {
 form {
   margin: 25px auto;
   padding: 20px;
-  border: 5px solid #ca3030;
-  width: 500px;
+  border: 5px solid black;
+  width: 400px;
   background: #ecebeb; }
 
 div.form-element {
@@ -209,26 +174,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center; }
-
-.footer {
-  height: 50px;
-  line-height: 50px;
-  background: black;
-  color: white;
-  text-align: center;
-  position: absolute;
-  width: 100%; }
-
-.footer2 {
-  height: 50px;
-  line-height: 50px;
-  background: black;
-  color: white;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%; }
 
 .regis {
   display: flex;
@@ -264,3 +209,127 @@ button {
 
 .imag {
   border-radius: 10px; }
+
+footer {
+  bottom: 0;
+  left: 0;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #121212;
+  color: white; }
+
+.copyright-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(211, 211, 211, 0.863); }
+
+.copyright {
+  font-size: 12px;
+  opacity: 0.7;
+  font-weight: 400;
+  padding: 10px 0; }
+
+.footer-menus {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 40%; }
+
+.footer-container {
+  height: fit-content;
+  width: 100%;
+  padding: 3rem 6rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.footer-content-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.footer-info,
+.menu-item-footer {
+  margin: 0.2rem 0;
+  opacity: 0.7;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s; }
+
+.menu-item-footer:hover {
+  opacity: 1; }
+
+.menu.title {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem; }
+
+.social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 100%; }
+
+.social-link {
+  height: 100%;
+  width: 30px;
+  background-image: url(data:image/png;base64,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);
+  background-size: 70%;
+  background-position: center;
+  margin-right: 1rem;
+  background-repeat: no-repeat; }
+
+.social-link:hover {
+  opacity: 0.7; }
+
+footer .social-link:nth-of-type(2) {
+  background-image: url(https://www.pngkit.com/png/full/488-4883158_subscribe-to-our-mailing-list-icono-de-instagram.png); }
+
+footer .social-link:nth-of-type(3) {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1liO4sL_mE52RMb33oaF3klmztZoH5UhgkA&usqp=CAU); }
+
+@media all and (max-width: 768px) {
+  .footer-container {
+    padding: 2rem;
+    flex-direction: column; }
+  .footer-content-container {
+    width: 100%;
+    padding: 2rem 0;
+    border-bottom: 1px solid #2a2a2a;
+    justify-content: center;
+    align-items: center; }
+  .footer-content-container:nth-of-type(1) {
+    align-items: flex-start; }
+  .footer-content-container:nth-of-type(3) {
+    border-bottom: none;
+    padding-bottom: 0; }
+  .footer-menus {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #2a2a2a; }
+  .footer-menus .footer-content-container:nth-of-type(1) {
+    width: 45%;
+    align-items: flex-start;
+    border-bottom: none; }
+  .footer-menus .footer-content-container:nth-of-type(2) {
+    width: 45%;
+    align-items: flex-start;
+    border-bottom: none; } }
+
+.buttoncon {
+  font-size: 150%; }
+
+.circle:hover {
+  border-radius: 20%; }
